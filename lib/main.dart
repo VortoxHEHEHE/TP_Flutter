@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { // Made By Paul-Yann Bouvier
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Clavier Numérique',
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
+ // Made By Paul-Yann Bouvier
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key});
 
@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
       selectedNumber = number;
     });
   }
-
+// Made By Paul-Yann Bouvier
   void displayImage() {
     // Vous pouvez personnaliser la logique pour afficher l'image en fonction du chiffre choisi ici
     if (selectedNumber >= 0 && selectedNumber <= 9) {
@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Widget buildNumericRow(List<int> numbers) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly, // Made By Paul-Yann Bouvier
       children: numbers
           .map(
             (number) => buildNumericButton(number),
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
           .toList(),
     );
   }
-
+// Made By Paul-Yann Bouvier
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 selectedNumber >= 0 ? '$selectedNumber' : 'Aucun chiffre choisi',
                 style: TextStyle(fontSize: 24),
               ),
-            ),
+            ), // Made By Paul-Yann Bouvier
             SizedBox(height: 20),
             // Utilisez des colonnes de 3 boutons chacune
             buildNumericRow([1, 2, 3]),
@@ -113,3 +113,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+// Made By Paul-Yann Bouvier
